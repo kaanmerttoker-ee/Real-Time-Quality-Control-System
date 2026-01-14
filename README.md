@@ -11,6 +11,7 @@ The aim is to analyze the live feed from a webcam to detect products that meet s
 -NumPy (Matrix Operations for Image Processing)
 
   How It Works?
+  
   https://github.com/user-attachments/assets/e9cff54c-8054-4b90-869f-7a0de45e35fb
   
 1. The webcam initializes when the script runs.
