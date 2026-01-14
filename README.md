@@ -1,16 +1,20 @@
-# Görüntü İşleme ile Kalite Kontrol Projesi
+  Real-Time Quality Control System
 
-Bu projeyi Elektrik Elektronik Mühendisliği eğitimim sırasında üretim bantlarındaki otomasyon mantığını kavramak için geliştirdim.
+I developed this project during my Electrical & Electronics Engineering studies to understand the logic of industrial automation and computer vision.
 
-  Projenin Amacı
-Kameradan gelen görüntüyü analiz ederek, belirlediğim kriterlere (renk ve boyut) uyan ürünleri tespit etmek ve "Sağlam/Hatalı" ayrımı yapabilmek.
+  Project Goal
+The aim is to analyze the live feed from a webcam to detect products that meet specific criteria (color and shape) and distinguish between "OK" (Approved) and "Defective" items in real-time.
 
-  Kullandığım Teknolojiler
--Python (Yazılım dili)
--OpenCV (Görüntü işleme kütüphanesi)
--NumPy (Matematiksel işlemler için)
+  Technologies Used
+-Python (Programming Language)
+-OpenCV (Computer Vision Library)
+-NumPy (Matrix Operations for Image Processing)
 
-  Nasıl Çalışır?
-1. Kod çalıştırıldığında webcam açılır.
-2. Görüntü HSV formatına çevrilerek renk filtrelemesi yapılır (Yeşil renk).
-3. Gürültü temizleme işlemlerinden sonra nesne tespit edilirse ekrana "ONAYLANDI" yazar.
+  How It Works?
+1. The webcam initializes when the script runs.
+2. Frames are converted to HSV color space for accurate color filtering (Green in this prototype).
+3. After applying morphological operations (Erosion/Dilation) to remove noise, the object is detected.
+4. If the object passes the check, the system displays "PRODUCTION APPROVED" (URUN SAGLAM - ONAYLANDI) on the screen.
+
+---
+Author: Kaan Mert Toker
